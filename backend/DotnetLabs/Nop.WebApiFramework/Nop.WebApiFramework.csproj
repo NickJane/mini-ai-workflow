@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
+		<PackageReference Include="Hangfire.AspNetCore" Version="1.8.22" />
+		<PackageReference Include="Hangfire.Core" Version="1.8.22" />
+		<PackageReference Include="Hangfire.Redis.StackExchange" Version="1.12.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.14.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.14.0" />
+		<PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.14.0" />
+		<PackageReference Include="OpenTelemetry.Exporter.Zipkin" Version="1.14.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.14.0" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.SqlClient" Version="1.0.0-rc9.10" />
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+		<PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DiagnosticAdapter" Version="3.1.32" />
+		<PackageReference Include="FreeSql" Version="3.5.303" />
+		<PackageReference Include="FreeSql.Provider.MySqlConnector" Version="3.5.303" />
+		<PackageReference Include="FreeSql.Extensions.JsonMap" Version="3.5.303" />
+		<PackageReference Include="FreeSql.Provider.SqlServer" Version="3.5.303" />
+		<PackageReference Include="FreeSql.Repository" Version="3.5.303" />
+
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.0" />
+
+		<!-- Swagger 不要升级, 不然会需要适配新的openapi体系, 懒得去改了 -->
+        <PackageReference Include="Microsoft.OpenApi" Version="1.6.22" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="7.2.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Nop.Infrastructure\Nop.Infrastructure.csproj" />
+	</ItemGroup>
+</Project>

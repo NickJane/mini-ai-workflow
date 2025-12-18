@@ -1,0 +1,16 @@
+global using System;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.Extensions.DependencyInjection;
+global using Serilog.Core;
+global using Serilog.Events;
+global using System.Diagnostics;
+global using System.Threading.Tasks;
+global using System.IO;
+global using System.Web;
+global using System.Linq;
+global using System.Collections.Generic;
+global using System.Collections;
+global using Microsoft.AspNetCore.Http.Extensions;
+global using Newtonsoft.Json;
+global using System.Text;
+global using Microsoft.Extensions.Primitives;

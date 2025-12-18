@@ -1,0 +1,150 @@
+/* 全局样式文件 */
+
+/* LogicFlow 节点样式 */
+.dify-node {
+  background: white;
+  border: 2px solid #e4e7ed;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  min-width: 200px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.dify-node:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border-color: #c0c4cc;
+}
+
+.dify-node.selected {
+  border-color: #409eff !important;
+  box-shadow: 0 4px 16px rgba(64, 158, 255, 0.2) !important;
+}
+
+/* 节点头部样式 */
+.node-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.node-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.node-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #303133;
+  flex: 1;
+}
+
+.node-badge {
+  background: #f0f9ff;
+  color: #409eff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid #b3d8ff;
+}
+
+/* 节点信息样式 */
+.node-info {
+  font-size: 12px;
+  color: #606266;
+  margin-bottom: 4px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.node-info:last-child {
+  margin-bottom: 0;
+}
+
+.info-text {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* 开始节点样式 */
+.start-node {
+  border-color: #06b6d4;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+    color: white;
+  }
+}
+
+/* 回复节点样式 */
+.reply-node {
+  border-color: #8b5cf6;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    color: white;
+  }
+}
+
+/* 条件节点样式 */
+.condition-node {
+  border-color: #f59e0b;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+  }
+}
+
+/* 变量赋值节点样式 */
+.assign-variable-node {
+  border-color: #059669;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: white;
+  }
+}
+
+/* LLM节点样式 */
+.llm-node {
+  border-color: #a855f7;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    color: white;
+  }
+}
+
+/* JS代码节点样式 */
+.jscode-node {
+  border-color: #f59e0b;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+  }
+}
+
+/* HTTP 节点样式 */
+.http-node {
+  border-color: #8b5cf6;
+  
+  .node-icon {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+  }
+}

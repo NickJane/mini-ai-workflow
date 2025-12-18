@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\..</DockerfileContext>
+
+        
+        <!-- 关键配置：无论 Debug 还是 Release 都生成 XML 注释 -->
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <DocumentationFile>bin\$(Configuration)\net10.0\SuperFlowApi.xml</DocumentationFile>
+        <CopyDocumentationFileToOutput>true</CopyDocumentationFileToOutput>
+	</PropertyGroup>
+
+    
+	<ItemGroup>
+        <PackageReference Include="MediatR" Version="13.1.0" />
+        <PackageReference Include="Collections.Pooled" Version="2.0.0-preview.27" />
+        <PackageReference Include="Jint" Version="4.3.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DotnetLabs\Nop.Infrastructure\Nop.Infrastructure.csproj" />
+		<ProjectReference Include="..\DotnetLabs\Nop.WebApiFramework\Nop.WebApiFramework.csproj" />
+	</ItemGroup>
+</Project>
