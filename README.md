@@ -1,5 +1,7 @@
 # mini-ai-workflow
 
+**中文文档** | [English README](README.en.md)
+
 A ready-to-use mini AI workflow designer developed using .NET 10 and Vue 3 (currently focused on flow/process design), which can, to some extent, replace Dify.
 
 ## 项目简介
@@ -64,7 +66,6 @@ npm run dev
 npm run build
 ```
 
-
 ### 后端地址配置
 
 - 开发环境默认后端地址：`http://localhost:30050`
@@ -102,7 +103,7 @@ cd backend/SuperFlowApi
 dotnet restore
 
 # 以开发环境启动，使用 launchSettings 中的 http 配置（默认 http://localhost:30050）
-dotnet run  
+dotnet run
 ```
 
 成功启动后，你应能在终端看到 ASP.NET Core 启动日志，默认监听地址为：`http://localhost:30050`。
@@ -114,6 +115,27 @@ dotnet run
    - 后端已启动且端口正确
    - 前端环境变量中 API 基础地址配置正确
    - 浏览器网络面板中请求 URL 与后端实际地址一致
+
+## 模型配置重要提示
+
+- **在使用任意 LLM 节点之前，必须先完成大模型配置**，否则画布中的 LLM 相关节点将无法正常工作。
+- 当前代码仅支持（并仅实际测试过）**阿里云系的大模型/向量服务**，例如：通义千问等。
+- 请根据你在阿里云控制台中创建的凭证信息，正确填写后端中的模型访问配置（密钥、Base URL、模型名称等）。
+- 如后续扩展/适配其他厂商模型，请在对应的配置与代码中进行修改，并确保在 README 中同步说明。
+
+> 建议在首次运行项目前，优先完成模型配置与连通性测试。
+
+对应界面示意图（仅为示例，实际界面请以运行结果为准）：
+
+![模型配置重要提示](docs/images/step1.png)
+
+## 产品预览
+
+下面是本项目运行时的部分页面预览，用于帮助你快速了解整体交互与主要功能布局：
+
+![流程设计与运行预览一](docs/images/step2.png)
+
+![流程设计与运行预览二](docs/images/step3.png)
 
 ## 登录说明
 
