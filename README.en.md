@@ -10,6 +10,14 @@ A ready-to-use mini AI workflow designer built with .NET 10 and Vue 3 (currently
 The frontend is built with Vue 3 and LogicFlow for flow design and debugging, while the backend is an ASP.NET Core Web API running on .NET 10.  
 This repository already contains both the frontend and backend code and can be run locally out of the box.
 
+This repository is positioned as a relatively **simple demo project**: the core design tries to be reasonably robust and extensible, but this repo itself **will not receive ongoing updates** and is mainly for demonstration and learning.  
+In the future, there might be a small **paid edition** that builds on top of this open-source version and adds a few extra features, for example:  
+- **Request logging and auditing** for API calls  
+- **Integration with other AI workflow nodes/systems** so you can chain or embed external workflows  
+
+The **most important core logic is already open-sourced** here; the paid source code would only contain a small amount of extra “nice-to-have” functionality.  
+If this little project happens to help you and you don’t mind buying the author a coffee, that paid edition is simply a humble way to say thanks and give a bit of motivation for building more small useful tools.
+
 ## Tech Stack
 
 ### Frontend
