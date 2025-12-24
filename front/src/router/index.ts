@@ -50,16 +50,7 @@ const router = createRouter({
         title: '流程设计器'
       }
     },
-    {
-      path: '/flow/logs/:flowId/:logId',
-      name: 'flowRunLogViewer',
-      component: () => import('@/views/flow/FlowRunLogViewer.vue'),
-      meta: {
-        layout: 'simple',
-        requiresAuth: true,
-        title: '运行日志'
-      }
-    },
+
     {
       path: '/flow/chat-test/:flowId',
       name: 'flowChatTest',
