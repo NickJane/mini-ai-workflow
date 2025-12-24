@@ -47,7 +47,7 @@ If this little project happens to help you and you don’t mind buying the autho
   - Logging: Serilog + console (with optional Seq)
   - Optional tracing: OpenTelemetry (e.g., Zipkin)
 - **Data Storage**:
-  - Database: MySQL (via `FreeSql`, default database name: `aiworkflow`)
+  - Database: MySQL (via `FreeSql`, default database name: `aiworkflowfree`)
   - Optional cache: Redis (connection string configurable, currently not actually used in the code)
 
 > Backend code is under `backend/SuperFlowApi`. Shared base libraries are under `backend/DotnetLabs`.
@@ -95,7 +95,7 @@ If there is already a shared HTTP helper (e.g. `http.util.ts`) or config file, m
 - **Database**: MySQL (5.7+/8.0+ recommended), default connection info (can be customized):
   - Server: `localhost`
   - Port: `3306`
-  - Database: `aiworkflow`
+  - Database: `aiworkflowfree`
   - User: `root`
   - Password: `sa1234`
 - (Optional) **Redis**: Local `127.0.0.1:6379`, used for caching related features

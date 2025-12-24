@@ -46,7 +46,7 @@ A ready-to-use mini AI workflow designer developed using .NET 10 and Vue 3 (curr
   - 日志：Serilog + 控制台输出 + 可选 Seq
   - 可选链路追踪：OpenTelemetry（Zipkin 等）
 - **数据存储**：
-  - 数据库：MySQL（通过 `FreeSql` 封装，默认库名 `aiworkflow`）
+  - 数据库：MySQL（通过 `FreeSql` 封装，默认库名 `aiworkflowfree`）
   - 可选缓存：Redis（连接字符串可在配置中修改）, 目前没有用上.
 
 > 后端代码位于 `backend/SuperFlowApi` 目录，其它通用基础库位于 `backend/DotnetLabs`。
@@ -94,7 +94,7 @@ VITE_API_BASE_URL=http://localhost:30050
 - **数据库**：MySQL（推荐 5.7+/8.0+），默认连接信息如下，可按需修改：
   - 服务器：`localhost`
   - 端口：`3306`
-  - 数据库：`aiworkflow`
+  - 数据库：`aiworkflowfree`
   - 用户名：`root`
   - 密码：`sa1234`
 - （可选）**Redis**：本地 `127.0.0.1:6379`，用于缓存相关功能

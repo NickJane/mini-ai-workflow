@@ -12,7 +12,7 @@ namespace Nop.WebApiFramework
         public Logging Logging { get; set; }
         public ConnectionStrings ConnectionStrings { get; set; }
 
-        public FreeSqlDatabaseOneInSettings FreeSqlDatabase { get; set; }
+        public FreeSqlDatabaseSettings FreeSqlDatabase { get; set; }
 
         public JwtSettingModel JwtSetting { get; set; }
 
@@ -42,7 +42,7 @@ namespace Nop.WebApiFramework
 
 
 
-    public class FreeSqlDatabaseOneInSettings
+    public class FreeSqlDatabaseSettings
     {
         public string ConnectionString { get; set; } = null!;
 
